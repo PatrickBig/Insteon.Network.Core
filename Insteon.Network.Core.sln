@@ -8,7 +8,10 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A23AA1F8-8E1A-43A2-97C7-5D822B1AF436}"
 	ProjectSection(SolutionItems) = preProject
 		LICENSE = LICENSE
+		README.md = README.md
 	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Insteon.Network.Core.Tests", "Insteon.Network.Core.Tests\Insteon.Network.Core.Tests.csproj", "{D25F1C67-8DF8-4D09-B604-A0A6DC71DB84}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,6 +23,10 @@ Global
 		{EC925B60-D09E-4258-B061-07BD56915804}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EC925B60-D09E-4258-B061-07BD56915804}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EC925B60-D09E-4258-B061-07BD56915804}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D25F1C67-8DF8-4D09-B604-A0A6DC71DB84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D25F1C67-8DF8-4D09-B604-A0A6DC71DB84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D25F1C67-8DF8-4D09-B604-A0A6DC71DB84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D25F1C67-8DF8-4D09-B604-A0A6DC71DB84}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
