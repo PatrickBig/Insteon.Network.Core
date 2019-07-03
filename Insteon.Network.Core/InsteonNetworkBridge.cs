@@ -93,11 +93,23 @@ namespace Insteon.Network
 
                     Log.WriteLine("RX: {0}", Utilities.ByteArrayToString(response.ToArray()));
 
+                    // Make sure there are 9 bytes
+                    if(response.Count != 9)
+                    {
+                        throw new IOException("Failed to open port, unable to negotiate with INSTEON controller.");
+                    }
+
+                    
                     int offset = 0;
                     for (int j = 0; j < response.Count; ++j)
                         if (response[j] == 0x02)
+                        {
+                            // This probably needed to be broken out once we got start bit
                             offset = j;
-
+                            break;
+                        }
+                            
+                    
                     if (response.Count >= offset + 9 && response[offset] == 0x02 && response[offset + 1] == 0x60 && response[offset + 8] == 0x06)
                     {
                         properties[PropertyKey.Address] = response[offset + 2] << 16 | response[offset + 3] << 8 | response[offset + 4];
