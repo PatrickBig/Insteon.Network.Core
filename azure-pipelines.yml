@@ -23,3 +23,4 @@ steps:
     majorVersion: '$(Major)'
     minorVersion: '$(Minor)'
     patchVersion: '$(Patch)'
+    verbosityPack: Detailed
